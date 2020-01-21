@@ -17,14 +17,13 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Models\" />
     <Folder Include="Services\" />
     <Folder Include="ViewModels\" />
     <Folder Include="Views\" />
   </ItemGroup>
 
   <ItemGroup>
-    <Compile Update="SudokuSurface.xaml.cs">
+    <Compile Update="Models\SudokuSurface.xaml.cs">
       <DependentUpon>SudokuSurface.xaml</DependentUpon>
     </Compile>
   </ItemGroup>
@@ -33,7 +32,7 @@
     <EmbeddedResource Update="MasterDetailPage1Detail.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="SudokuSurface.xaml">
+    <EmbeddedResource Update="Models\SudokuSurface.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
   </ItemGroup>

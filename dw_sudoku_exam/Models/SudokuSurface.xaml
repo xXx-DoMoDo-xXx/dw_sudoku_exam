@@ -1,0 +1,142 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="dw_sudoku_exam.Page1">
+
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Style x:Key="Button" TargetType="Button">
+                <Setter Property="BackgroundColor" Value="Gray"/>
+                <Setter Property="FontSize" Value="15"/>
+                <Setter Property="BorderColor" Value="White"/>
+            </Style>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    <Grid Margin="0"
+        Padding="10,150,10,50"
+        ColumnSpacing="2"
+        RowSpacing="2"
+        BackgroundColor="Black" >
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="1*"/>
+        </Grid.ColumnDefinitions>
+
+        <!-- First Row -->
+        <Entry Grid.Row="0" Grid.Column="0" Style="{StaticResource Button}" Text="1"/>
+        <Entry Grid.Row="1" Grid.Column="0" Style="{StaticResource Button}" Text="2"/>
+        <Entry Grid.Row="2" Grid.Column="0" Style="{StaticResource Button}" Text="3"/>
+        <Entry Grid.Row="0" Grid.Column="1" Style="{StaticResource Button}" Text="4"/>
+        <Entry Grid.Row="1" Grid.Column="1" Style="{StaticResource Button}" Text="5"/>
+        <Entry Grid.Row="2" Grid.Column="1" Style="{StaticResource Button}" Text="6"/>
+        <Entry Grid.Row="0" Grid.Column="2" Style="{StaticResource Button}" Text="7"/>
+        <Entry Grid.Row="1" Grid.Column="2" Style="{StaticResource Button}" Text="8"/>
+        <Entry Grid.Row="2" Grid.Column="2" Style="{StaticResource Button}" Text="9"/>
+
+        <Entry Grid.Row="0" Grid.Column="3" Style="{StaticResource Button}" Text="1"/>
+        <Entry Grid.Row="1" Grid.Column="3" Style="{StaticResource Button}" Text="2"/>
+        <Entry Grid.Row="2" Grid.Column="3" Style="{StaticResource Button}" Text="3"/>
+        <Entry Grid.Row="0" Grid.Column="4" Style="{StaticResource Button}" Text="4"/>
+        <Entry Grid.Row="1" Grid.Column="4" Style="{StaticResource Button}" Text="5"/>
+        <Entry Grid.Row="2" Grid.Column="4" Style="{StaticResource Button}" Text="6"/>
+        <Entry Grid.Row="0" Grid.Column="5" Style="{StaticResource Button}" Text="7"/>
+        <Entry Grid.Row="1" Grid.Column="5" Style="{StaticResource Button}" Text="8"/>
+        <Entry Grid.Row="2" Grid.Column="5" Style="{StaticResource Button}" Text="9"/>
+
+        <Entry Grid.Row="0" Grid.Column="6" Style="{StaticResource Button}" Text="1"/>
+        <Entry Grid.Row="1" Grid.Column="6" Style="{StaticResource Button}" Text="2"/>
+        <Entry Grid.Row="2" Grid.Column="6" Style="{StaticResource Button}" Text="3"/>
+        <Entry Grid.Row="0" Grid.Column="7" Style="{StaticResource Button}" Text="4"/>
+        <Entry Grid.Row="1" Grid.Column="7" Style="{StaticResource Button}" Text="5"/>
+        <Entry Grid.Row="2" Grid.Column="7" Style="{StaticResource Button}" Text="6"/>
+        <Entry Grid.Row="0" Grid.Column="8" Style="{StaticResource Button}" Text="7"/>
+        <Entry Grid.Row="1" Grid.Column="8" Style="{StaticResource Button}" Text="8"/>
+        <Entry Grid.Row="2" Grid.Column="8" Style="{StaticResource Button}" Text="9"/>
+
+        <!-- Second Row -->
+        <Entry Grid.Row="3" Grid.Column="0" Style="{StaticResource Button}" Text="1"/>
+        <Entry Grid.Row="4" Grid.Column="0" Style="{StaticResource Button}" Text="2"/>
+        <Entry Grid.Row="5" Grid.Column="0" Style="{StaticResource Button}" Text="3"/>
+        <Entry Grid.Row="3" Grid.Column="1" Style="{StaticResource Button}" Text="4"/>
+        <Entry Grid.Row="4" Grid.Column="1" Style="{StaticResource Button}" Text="5"/>
+        <Entry Grid.Row="5" Grid.Column="1" Style="{StaticResource Button}" Text="6"/>
+        <Entry Grid.Row="3" Grid.Column="2" Style="{StaticResource Button}" Text="7"/>
+        <Entry Grid.Row="4" Grid.Column="2" Style="{StaticResource Button}" Text="8"/>
+        <Entry Grid.Row="5" Grid.Column="2" Style="{StaticResource Button}" Text="9"/>
+
+        <Entry Grid.Row="3" Grid.Column="3" Style="{StaticResource Button}" Text="1"/>
+        <Entry Grid.Row="4" Grid.Column="3" Style="{StaticResource Button}" Text="2"/>
+        <Entry Grid.Row="5" Grid.Column="3" Style="{StaticResource Button}" Text="3"/>
+        <Entry Grid.Row="3" Grid.Column="4" Style="{StaticResource Button}" Text="4"/>
+        <Entry Grid.Row="4" Grid.Column="4" Style="{StaticResource Button}" Text="5"/>
+        <Entry Grid.Row="5" Grid.Column="4" Style="{StaticResource Button}" Text="6"/>
+        <Entry Grid.Row="3" Grid.Column="5" Style="{StaticResource Button}" Text="7"/>
+        <Entry Grid.Row="4" Grid.Column="5" Style="{StaticResource Button}" Text="8"/>
+        <Entry Grid.Row="5" Grid.Column="5" Style="{StaticResource Button}" Text="9"/>
+
+        <Entry Grid.Row="3" Grid.Column="6" Style="{StaticResource Button}" Text="1"/>
+        <Entry Grid.Row="4" Grid.Column="6" Style="{StaticResource Button}" Text="2"/>
+        <Entry Grid.Row="5" Grid.Column="6" Style="{StaticResource Button}" Text="3"/>
+        <Entry Grid.Row="3" Grid.Column="7" Style="{StaticResource Button}" Text="4"/>
+        <Entry Grid.Row="4" Grid.Column="7" Style="{StaticResource Button}" Text="5"/>
+        <Entry Grid.Row="5" Grid.Column="7" Style="{StaticResource Button}" Text="6"/>
+        <Entry Grid.Row="3" Grid.Column="8" Style="{StaticResource Button}" Text="7"/>
+        <Entry Grid.Row="4" Grid.Column="8" Style="{StaticResource Button}" Text="8"/>
+        <Entry Grid.Row="5" Grid.Column="8" Style="{StaticResource Button}" Text="9"/>
+
+        <!-- Third Row -->
+        <Entry Grid.Row="6" Grid.Column="0" Style="{StaticResource Button}" Text="1"/>
+        <Entry Grid.Row="7" Grid.Column="0" Style="{StaticResource Button}" Text="2"/>
+        <Entry Grid.Row="8" Grid.Column="0" Style="{StaticResource Button}" Text="3"/>
+        <Entry Grid.Row="6" Grid.Column="1" Style="{StaticResource Button}" Text="4"/>
+        <Entry Grid.Row="7" Grid.Column="1" Style="{StaticResource Button}" Text="5"/>
+        <Entry Grid.Row="8" Grid.Column="1" Style="{StaticResource Button}" Text="6"/>
+        <Entry Grid.Row="6" Grid.Column="2" Style="{StaticResource Button}" Text="7"/>
+        <Entry Grid.Row="7" Grid.Column="2" Style="{StaticResource Button}" Text="8"/>
+        <Entry Grid.Row="8" Grid.Column="2" Style="{StaticResource Button}" Text="9"/>
+
+        <Entry Grid.Row="6" Grid.Column="3" Style="{StaticResource Button}" Text="1"/>
+        <Entry Grid.Row="7" Grid.Column="3" Style="{StaticResource Button}" Text="2"/>
+        <Entry Grid.Row="8" Grid.Column="3" Style="{StaticResource Button}" Text="3"/>
+        <Entry Grid.Row="6" Grid.Column="4" Style="{StaticResource Button}" Text="4"/>
+        <Entry Grid.Row="7" Grid.Column="4" Style="{StaticResource Button}" Text="5"/>
+        <Entry Grid.Row="8" Grid.Column="4" Style="{StaticResource Button}" Text="6"/>
+        <Entry Grid.Row="6" Grid.Column="5" Style="{StaticResource Button}" Text="7"/>
+        <Entry Grid.Row="7" Grid.Column="5" Style="{StaticResource Button}" Text="8"/>
+        <Entry Grid.Row="8" Grid.Column="5" Style="{StaticResource Button}" Text="9"/>
+
+        <Entry Grid.Row="6" Grid.Column="6" Style="{StaticResource Button}" Text="1"/>
+        <Entry Grid.Row="7" Grid.Column="6" Style="{StaticResource Button}" Text="2"/>
+        <Entry Grid.Row="8" Grid.Column="6" Style="{StaticResource Button}" Text="3"/>
+        <Entry Grid.Row="6" Grid.Column="7" Style="{StaticResource Button}" Text="4"/>
+        <Entry Grid.Row="7" Grid.Column="7" Style="{StaticResource Button}" Text="5"/>
+        <Entry Grid.Row="8" Grid.Column="7" Style="{StaticResource Button}" Text="6"/>
+        <Entry Grid.Row="6" Grid.Column="8" Style="{StaticResource Button}" Text="7"/>
+        <Entry Grid.Row="7" Grid.Column="8" Style="{StaticResource Button}" Text="8"/>
+        <Entry Grid.Row="8" Grid.Column="8" Style="{StaticResource Button}" Text="9"/>
+    </Grid>
+</ContentPage>
