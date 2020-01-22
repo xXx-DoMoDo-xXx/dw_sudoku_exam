@@ -7,13 +7,14 @@ using System.Threading.Tasks;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
-namespace dw_sudoku_exam
+namespace Dw_Sudoku_Exam
 {
-    [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class Page1 : ContentPage
+    public partial class MainPage : ContentPage
     {
-        public Page1()
+        public MainPage(MainPageViewModel vm)
         {
+            BindingContext = vm;
+
             InitializeComponent();
         }
     }
