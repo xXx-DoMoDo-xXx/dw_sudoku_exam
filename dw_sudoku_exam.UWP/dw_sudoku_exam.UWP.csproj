@@ -149,14 +149,14 @@
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Xamarin.Forms" Version="4.3.0.908675" />
-    <PackageReference Include="Microsoft.NETCore.UniversalWindowsPlatform" Version="6.1.9"/>
+    <PackageReference Include="Microsoft.NETCore.UniversalWindowsPlatform" Version="6.1.9" />
     <PackageReference Include="Xamarin.Essentials" Version="1.3.1" />
     <PackageReference Include="Newtonsoft.Json" Version="11.0.2" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\dw_sudoku_exam\dw_sudoku_exam.csproj">
-      <Project>{9A003009-09DC-43A0-A049-AD50CB21CA35}</Project>
-      <Name>dw_sudoku_exam</Name>
+    <ProjectReference Include="..\dw_sudoku_exam\Dw_Sudoku_Exam.csproj">
+      <Project>{49D474BE-EAFD-4A83-A89F-191FE3D3BB84}</Project>
+      <Name>Dw_Sudoku_Exam</Name>
     </ProjectReference>
   </ItemGroup>
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">

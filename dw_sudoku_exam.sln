@@ -3,13 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29519.181
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "dw_sudoku_exam.UWP", "dw_sudoku_exam.UWP\dw_sudoku_exam.UWP.csproj", "{638545B7-2C70-490A-A953-7FA1D7A40D3E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dw_Sudoku_Exam.UWP", "dw_sudoku_exam.UWP\Dw_Sudoku_Exam.UWP.csproj", "{638545B7-2C70-490A-A953-7FA1D7A40D3E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "dw_sudoku_exam.Android", "dw_sudoku_exam.Android\dw_sudoku_exam.Android.csproj", "{04CAA86F-B839-426C-BBE4-5EE597DC52B1}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dw_Sudoku_Exam.Android", "dw_sudoku_exam.Android\Dw_Sudoku_Exam.Android.csproj", "{04CAA86F-B839-426C-BBE4-5EE597DC52B1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "dw_sudoku_exam", "dw_sudoku_exam\dw_sudoku_exam.csproj", "{49D474BE-EAFD-4A83-A89F-191FE3D3BB84}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Dw_Sudoku_Exam", "dw_sudoku_exam\Dw_Sudoku_Exam.csproj", "{49D474BE-EAFD-4A83-A89F-191FE3D3BB84}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "dw_sudoku_exam_test", "dw_sudoku_exam_test\dw_sudoku_exam_test.csproj", "{9FC81E8B-DE0C-4BD1-99AF-7E5C5AFC5EC1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Dw_Sudoku_Exam_Test", "dw_sudoku_exam_test\Dw_Sudoku_Exam_Test.csproj", "{9FC81E8B-DE0C-4BD1-99AF-7E5C5AFC5EC1}"
 	ProjectSection(ProjectDependencies) = postProject
 		{49D474BE-EAFD-4A83-A89F-191FE3D3BB84} = {49D474BE-EAFD-4A83-A89F-191FE3D3BB84}
 	EndProjectSection

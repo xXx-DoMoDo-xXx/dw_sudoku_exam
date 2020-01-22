@@ -6,7 +6,7 @@ namespace dw_sudoku_exam
 {
     public interface ISudoku
     {
-        int CountCells();
+        int EvaluateCell();
 
         void Reset();
     }

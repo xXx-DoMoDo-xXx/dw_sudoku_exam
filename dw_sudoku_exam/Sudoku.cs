@@ -6,7 +6,7 @@ namespace dw_sudoku_exam
 {
     public class Sudoku : ISudoku
     {
-        public int CountCells()
+        public int EvaluateCell()
         {
             throw new NotImplementedException();
         }

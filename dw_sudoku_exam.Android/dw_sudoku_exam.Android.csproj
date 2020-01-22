@@ -87,9 +87,9 @@
     <AndroidResource Include="Resources\drawable\xamarin_logo.png" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\dw_sudoku_exam\dw_sudoku_exam.csproj">
-      <Project>{9A003009-09DC-43A0-A049-AD50CB21CA35}</Project>
-      <Name>dw_sudoku_exam</Name>
+    <ProjectReference Include="..\dw_sudoku_exam\Dw_Sudoku_Exam.csproj">
+      <Project>{49D474BE-EAFD-4A83-A89F-191FE3D3BB84}</Project>
+      <Name>Dw_Sudoku_Exam</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
