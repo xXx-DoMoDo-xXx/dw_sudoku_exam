@@ -11,7 +11,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dw_Sudoku_Exam.iOS", "Dw_Su
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Dw_Sudoku_Exam", "Dw_Sudoku_Exam\Dw_Sudoku_Exam.csproj", "{EEFEC268-AD5D-438B-AC0D-0396D765B424}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dw_Sudoku_Exam_Test_Nunit", "Dw_Sudoku_Exam_Test_Nunit\Dw_Sudoku_Exam_Test_Nunit.csproj", "{FD4752F5-792C-436A-847F-D6671A9151B0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Dw_Sudoku_Exam_Test", "Dw_Sudoku_Exam_Test_Nunit\Dw_Sudoku_Exam_Test.csproj", "{FD4752F5-792C-436A-847F-D6671A9151B0}"
 	ProjectSection(ProjectDependencies) = postProject
 		{EEFEC268-AD5D-438B-AC0D-0396D765B424} = {EEFEC268-AD5D-438B-AC0D-0396D765B424}
 	EndProjectSection

@@ -10,23 +10,33 @@
         <ResourceDictionary>
             <Style x:Key="Entry" TargetType="Entry">
                 <Setter Property="BackgroundColor" Value="Gray"/>
-                <Setter Property="FontSize" Value="15"/>
+                <Setter Property="FontSize" Value="13"/>
                 <Setter Property="Keyboard" Value="Numeric"/>
+            </Style>
+            <Style x:Key="MainGrid" TargetType="Grid">
+                <Setter Property="Margin" Value="0"/>
+                <Setter Property="Padding" Value="10,130,10,120"/>
+                <Setter Property="ColumnSpacing" Value="2"/>
+                <Setter Property="RowSpacing" Value="2"/>
+                <Setter Property="BackgroundColor" Value="YellowGreen"/>
+            </Style>
+            <Style x:Key="SmallGrid" TargetType="Grid">
+                <Setter Property="Margin" Value="-5"/>
+                <Setter Property="Padding" Value="5"/>
+                <Setter Property="ColumnSpacing" Value="2"/>
+                <Setter Property="RowSpacing" Value="2"/>
+                <Setter Property="BackgroundColor" Value="Black"/>
             </Style>
         </ResourceDictionary>
     </ContentPage.Resources>
-    <Grid Margin="0"
-        Padding="1"
-        ColumnSpacing="2"
-        RowSpacing="2"
-        BackgroundColor="Black" >
-
+    
+    <!-- Main Grid -->
+    <Grid x:Name="mainGrid" Style="{StaticResource MainGrid}">
         <Grid.RowDefinitions>
             <RowDefinition Height="1*"/>
             <RowDefinition Height="1*"/>
             <RowDefinition Height="1*"/>
         </Grid.RowDefinitions>
-
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="1*"/>
             <ColumnDefinition Width="1*"/>
@@ -34,7 +44,7 @@
         </Grid.ColumnDefinitions>
 
         <!-- Top Left Square -->
-        <Grid Grid.Row="0" Grid.Column="0">
+        <Grid x:Name="topLeftSquare" Grid.Row="0" Grid.Column="0" Style="{StaticResource SmallGrid}">
             <Grid.RowDefinitions>
                 <RowDefinition Height="1*"/>
                 <RowDefinition Height="1*"/>
@@ -59,7 +69,7 @@
         </Grid>
 
         <!-- Top Middle Square -->
-        <Grid Grid.Row="0" Grid.Column="1">
+        <Grid x:Name="topMiddleSquare" Grid.Row="0" Grid.Column="1" Style="{StaticResource SmallGrid}">
             <Grid.RowDefinitions>
                 <RowDefinition Height="1*"/>
                 <RowDefinition Height="1*"/>
@@ -84,7 +94,7 @@
         </Grid>
 
         <!-- Top Right Square -->
-        <Grid Grid.Row="0" Grid.Column="2">
+        <Grid x:Name="topRightSquare" Grid.Row="0" Grid.Column="2" Style="{StaticResource SmallGrid}">
             <Grid.RowDefinitions>
                 <RowDefinition Height="1*"/>
                 <RowDefinition Height="1*"/>
@@ -109,7 +119,7 @@
         </Grid>
 
         <!-- Middle Left Square -->
-        <Grid Grid.Row="1" Grid.Column="0">
+        <Grid x:Name="middleLeftSquare" Grid.Row="1" Grid.Column="0" Style="{StaticResource SmallGrid}">
             <Grid.RowDefinitions>
                 <RowDefinition Height="1*"/>
                 <RowDefinition Height="1*"/>
@@ -134,7 +144,7 @@
         </Grid>
 
         <!-- Middle Middle Square -->
-        <Grid Grid.Row="1" Grid.Column="1">
+        <Grid x:Name="middleMiddleSquare" Grid.Row="1" Grid.Column="1" Style="{StaticResource SmallGrid}">
             <Grid.RowDefinitions>
                 <RowDefinition Height="1*"/>
                 <RowDefinition Height="1*"/>
@@ -159,7 +169,7 @@
         </Grid>
         
         <!-- Middle Right Square -->
-        <Grid Grid.Row="1" Grid.Column="2">
+        <Grid x:Name="middleRightSquare" Grid.Row="1" Grid.Column="2" Style="{StaticResource SmallGrid}">
             <Grid.RowDefinitions>
                 <RowDefinition Height="1*"/>
                 <RowDefinition Height="1*"/>
@@ -184,7 +194,7 @@
         </Grid>
 
         <!-- Bottom Left Square -->
-        <Grid Grid.Row="2" Grid.Column="0">
+        <Grid x:Name="bottomLeftSquare" Grid.Row="2" Grid.Column="0" Style="{StaticResource SmallGrid}">
             <Grid.RowDefinitions>
                 <RowDefinition Height="1*"/>
                 <RowDefinition Height="1*"/>
@@ -209,7 +219,7 @@
         </Grid>
 
         <!-- Bottom Middle Square -->
-        <Grid Grid.Row="2" Grid.Column="1">
+        <Grid x:Name="bottomMiddleSquare" Grid.Row="2" Grid.Column="1" Style="{StaticResource SmallGrid}">
             <Grid.RowDefinitions>
                 <RowDefinition Height="1*"/>
                 <RowDefinition Height="1*"/>
@@ -234,7 +244,7 @@
         </Grid>
 
         <!-- Bottom Right Square -->
-        <Grid Grid.Row="2" Grid.Column="2">
+        <Grid x:Name="bottomRightSquare" Grid.Row="2" Grid.Column="2" Style="{StaticResource SmallGrid}">
             <Grid.RowDefinitions>
                 <RowDefinition Height="1*"/>
                 <RowDefinition Height="1*"/>

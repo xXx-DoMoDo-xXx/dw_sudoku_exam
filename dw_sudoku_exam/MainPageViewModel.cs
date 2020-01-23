@@ -89,12 +89,6 @@ namespace Dw_Sudoku_Exam
             this.sudoku = Sudoku;
         }
 
-
-        private void SudokuCommand(string args)
-        {
-
-        }
-
         public bool validateInput(string value) {
 
             int val;
@@ -114,6 +108,5 @@ namespace Dw_Sudoku_Exam
 
             return true;
         }
-
     }
 }
