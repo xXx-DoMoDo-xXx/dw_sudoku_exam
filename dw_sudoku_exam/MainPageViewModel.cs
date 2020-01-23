@@ -26,14 +26,14 @@ namespace Dw_Sudoku_Exam
             }
         }
 
-        public MainPageViewModel(ISudoku calculator)
+        public MainPageViewModel(ISudoku Sudoku)
         {
-            this.sudoku = calculator;
+            this.sudoku = Sudoku;
         }
 
         private void SudokuCommand(string args)
         {
-           
+
         }
 
         private void UpdateResult(string value)

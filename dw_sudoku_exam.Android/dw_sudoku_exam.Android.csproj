@@ -3,12 +3,12 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{04CAA86F-B839-426C-BBE4-5EE597DC52B1}</ProjectGuid>
+    <ProjectGuid>{06240DC8-E315-448D-A63B-DD66ADEBEC30}</ProjectGuid>
     <ProjectTypeGuids>{EFBA0AD7-5A72-4C68-AF49-83D382785DCF};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <TemplateGuid>{9AA2D3C6-3393-45F1-8E7C-5A9901728795}</TemplateGuid>
     <OutputType>Library</OutputType>
-    <RootNamespace>dw_sudoku_exam.Droid</RootNamespace>
-    <AssemblyName>dw_sudoku_exam.Android</AssemblyName>
+    <RootNamespace>Dw_Sudoku_Exam.Droid</RootNamespace>
+    <AssemblyName>Dw_Sudoku_Exam.Android</AssemblyName>
     <AndroidApplication>True</AndroidApplication>
     <AndroidResgenFile>Resources\Resource.designer.cs</AndroidResgenFile>
     <AndroidResgenClass>Resource</AndroidResgenClass>
@@ -54,7 +54,6 @@
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Xamarin.Forms" Version="4.3.0.908675" />
-    <PackageReference Include="Newtonsoft.Json" Version="11.0.2" />
     <PackageReference Include="Xamarin.Essentials" Version="1.3.1" />
   </ItemGroup>
   <ItemGroup>
@@ -87,8 +86,8 @@
     <AndroidResource Include="Resources\drawable\xamarin_logo.png" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\dw_sudoku_exam\Dw_Sudoku_Exam.csproj">
-      <Project>{49D474BE-EAFD-4A83-A89F-191FE3D3BB84}</Project>
+    <ProjectReference Include="..\Dw_Sudoku_Exam\Dw_Sudoku_Exam.csproj">
+      <Project>{91128BBF-1942-4BC5-B691-89AC3D9BD70D}</Project>
       <Name>Dw_Sudoku_Exam</Name>
     </ProjectReference>
   </ItemGroup>

@@ -7,15 +7,15 @@
   IgnorableNamespaces="uap mp">
 
   <Identity
-    Name="54897093-1673-4e8f-a0b6-6f3e1165d70b"
-    Publisher="CN=b5818597-260b-4002-b613-409e027abadf"
+    Name="87c28031-2515-4b5a-8feb-d1496257a4a5"
+    Publisher="CN=aa5f3e4b-c080-47d4-a11c-91cd72430eca"
     Version="1.0.0.0" />
 
   <mp:PhoneIdentity PhoneProductId="ec0cc741-fd3e-485c-81be-68815c480690" PhonePublisherId="00000000-0000-0000-0000-000000000000"/>
 
   <Properties>
-    <DisplayName>dw_sudoku_exam.UWP</DisplayName>
-    <PublisherDisplayName>b5818597-260b-4002-b613-409e027abadf</PublisherDisplayName>
+    <DisplayName>Dw_Sudoku_Exam.UWP</DisplayName>
+    <PublisherDisplayName>aa5f3e4b-c080-47d4-a11c-91cd72430eca</PublisherDisplayName>
     <Logo>Assets\StoreLogo.png</Logo>
   </Properties>
 
@@ -30,12 +30,12 @@
   <Applications>
     <Application Id="App"
       Executable="$targetnametoken$.exe"
-      EntryPoint="dw_sudoku_exam.UWP.App">
+      EntryPoint="Dw_Sudoku_Exam.UWP.App">
       <uap:VisualElements
-        DisplayName="dw_sudoku_exam.UWP"
+        DisplayName="Dw_Sudoku_Exam.UWP"
         Square150x150Logo="Assets\Square150x150Logo.png"
         Square44x44Logo="Assets\Square44x44Logo.png"
-        Description="dw_sudoku_exam.UWP"
+        Description="Dw_Sudoku_Exam.UWP"
         BackgroundColor="transparent">
         <uap:DefaultTile Wide310x150Logo="Assets\Wide310x150Logo.png" Square310x310Logo="Assets\LargeTile.png" Square71x71Logo="Assets\SmallTile.png">
           <uap:ShowNameOnTiles>

@@ -13,7 +13,7 @@ using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
 
-namespace dw_sudoku_exam.UWP
+namespace Dw_Sudoku_Exam.UWP
 {
     public sealed partial class MainPage
     {
@@ -21,7 +21,7 @@ namespace dw_sudoku_exam.UWP
         {
             this.InitializeComponent();
 
-            LoadApplication(new dw_sudoku_exam.App());
+            LoadApplication(new Dw_Sudoku_Exam.App());
         }
     }
 }

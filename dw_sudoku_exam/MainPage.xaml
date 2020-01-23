@@ -4,14 +4,13 @@
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
-             x:Class="Dw_Sudoku_Exam.Page1">
+             x:Class="Dw_Sudoku_Exam.MainPage">
 
     <ContentPage.Resources>
         <ResourceDictionary>
             <Style x:Key="Entry" TargetType="Entry">
                 <Setter Property="BackgroundColor" Value="Gray"/>
                 <Setter Property="FontSize" Value="15"/>
-                <Setter Property="BorderColor" Value="White"/>
             </Style>
         </ResourceDictionary>
     </ContentPage.Resources>

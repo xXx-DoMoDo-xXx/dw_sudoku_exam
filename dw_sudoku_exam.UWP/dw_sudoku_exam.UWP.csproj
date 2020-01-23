@@ -4,12 +4,12 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
-    <ProjectGuid>{638545B7-2C70-490A-A953-7FA1D7A40D3E}</ProjectGuid>
+    <ProjectGuid>{E14FAE29-09B7-44E5-86FE-0C3FE2C5234A}</ProjectGuid>
     <TemplateGuid>{98C37F10-6541-44BE-B1E6-7EB3EB8C08F1}</TemplateGuid>
     <OutputType>AppContainerExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>dw_sudoku_exam.UWP</RootNamespace>
-    <AssemblyName>dw_sudoku_exam.UWP</AssemblyName>
+    <RootNamespace>Dw_Sudoku_Exam.UWP</RootNamespace>
+    <AssemblyName>Dw_Sudoku_Exam.UWP</AssemblyName>
     <DefaultLanguage>en-US</DefaultLanguage>
     <TargetPlatformIdentifier>UAP</TargetPlatformIdentifier>
     <TargetPlatformVersion>10.0.17134.0</TargetPlatformVersion>
@@ -149,13 +149,12 @@
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Xamarin.Forms" Version="4.3.0.908675" />
-    <PackageReference Include="Microsoft.NETCore.UniversalWindowsPlatform" Version="6.1.9" />
+    <PackageReference Include="Microsoft.NETCore.UniversalWindowsPlatform" Version="6.1.9"/>
     <PackageReference Include="Xamarin.Essentials" Version="1.3.1" />
-    <PackageReference Include="Newtonsoft.Json" Version="11.0.2" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\dw_sudoku_exam\Dw_Sudoku_Exam.csproj">
-      <Project>{49D474BE-EAFD-4A83-A89F-191FE3D3BB84}</Project>
+    <ProjectReference Include="..\Dw_Sudoku_Exam\Dw_Sudoku_Exam.csproj">
+      <Project>{91128BBF-1942-4BC5-B691-89AC3D9BD70D}</Project>
       <Name>Dw_Sudoku_Exam</Name>
     </ProjectReference>
   </ItemGroup>

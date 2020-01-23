@@ -1,15 +1,20 @@
 ﻿using System;
-using Xamarin.Essentials;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
+using Dw_Sudoku_Exam.Services;
+using Dw_Sudoku_Exam.Views;
 
-namespace dw_sudoku_exam
+namespace Dw_Sudoku_Exam
 {
     public partial class App : Application
     {
+
         public App()
         {
+            InitializeComponent();
 
+            DependencyService.Register<MockDataStore>();
+            MainPage = new Views.MainPage();
         }
 
         protected override void OnStart()

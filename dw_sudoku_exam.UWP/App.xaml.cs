@@ -15,7 +15,7 @@ using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
 
-namespace dw_sudoku_exam.UWP
+namespace Dw_Sudoku_Exam.UWP
 {
     /// <summary>
     /// Provides application-specific behavior to supplement the default Application class.

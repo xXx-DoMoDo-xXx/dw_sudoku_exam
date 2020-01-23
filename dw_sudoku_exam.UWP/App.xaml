@@ -1,8 +1,8 @@
 ﻿<Application
-    x:Class="dw_sudoku_exam.UWP.App"
+    x:Class="Dw_Sudoku_Exam.UWP.App"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-    xmlns:local="using:dw_sudoku_exam.UWP"
+    xmlns:local="using:Dw_Sudoku_Exam.UWP"
     RequestedTheme="Light">
 
 </Application>
