@@ -16,7 +16,7 @@
         </ResourceDictionary>
     </ContentPage.Resources>
     <Grid Margin="0"
-        Padding="10,150,10,50"
+        Padding="1"
         ColumnSpacing="2"
         RowSpacing="2"
         BackgroundColor="Black" >
@@ -32,16 +32,10 @@
             <ColumnDefinition Width="1*"/>
             <ColumnDefinition Width="1*"/>
         </Grid.ColumnDefinitions>
-        
-        <Grid
+
+        <!-- Top Left Square -->
+        <Grid Grid.Row="0" Grid.Column="0">
             <Grid.RowDefinitions>
-                <RowDefinition Height="1*"/>
-                <RowDefinition Height="1*"/>
-                <RowDefinition Height="1*"/>
-                <RowDefinition Height="1*"/>
-                <RowDefinition Height="1*"/>
-                <RowDefinition Height="1*"/>
-                <RowDefinition Height="1*"/>
                 <RowDefinition Height="1*"/>
                 <RowDefinition Height="1*"/>
                 <RowDefinition Height="1*"/>
@@ -51,15 +45,8 @@
                 <ColumnDefinition Width="1*"/>
                 <ColumnDefinition Width="1*"/>
                 <ColumnDefinition Width="1*"/>
-                <ColumnDefinition Width="1*"/>
-                <ColumnDefinition Width="1*"/>
-                <ColumnDefinition Width="1*"/>
-                <ColumnDefinition Width="1*"/>
-                <ColumnDefinition Width="1*"/>
-                <ColumnDefinition Width="1*"/>
             </Grid.ColumnDefinitions>
 
-            <!-- First Row -->
             <Entry Grid.Row="0" Grid.Column="0" HorizontalTextAlignment="Center" Style="{StaticResource Entry}" Text="5"/>
             <Entry Grid.Row="1" Grid.Column="0" HorizontalTextAlignment="Center" Style="{StaticResource Entry}" Text="2"/>
             <Entry Grid.Row="2" Grid.Column="0" HorizontalTextAlignment="Center" Style="{StaticResource Entry}" Text="{Binding Field3}"/>
@@ -69,88 +56,206 @@
             <Entry Grid.Row="0" Grid.Column="2" HorizontalTextAlignment="Center" Style="{StaticResource Entry}" Text="6"/>
             <Entry Grid.Row="1" Grid.Column="2" HorizontalTextAlignment="Center" Style="{StaticResource Entry}" Text="7"/>
             <Entry Grid.Row="2" Grid.Column="2" HorizontalTextAlignment="Center" Style="{StaticResource Entry}" Text="{Binding Field9}"/>
+        </Grid>
 
-            <Entry Grid.Row="0" Grid.Column="3" HorizontalTextAlignment="Center" Style="{StaticResource Entry}" Text="{Binding Field10}"/>
-            <Entry Grid.Row="1" Grid.Column="3" HorizontalTextAlignment="Center" Style="{StaticResource Entry}" Text="8"/>
-            <Entry Grid.Row="2" Grid.Column="3" HorizontalTextAlignment="Center" Style="{StaticResource Entry}" Text="7"/>
-            <Entry Grid.Row="0" Grid.Column="4" HorizontalTextAlignment="Center" Style="{StaticResource Entry}" Text="3"/>
-            <Entry Grid.Row="1" Grid.Column="4" HorizontalTextAlignment="Center" Style="{StaticResource Entry}" Text="6"/>
-            <Entry Grid.Row="2" Grid.Column="4" HorizontalTextAlignment="Center" Style="{StaticResource Entry}" Text="{Binding Field15}"/>
-            <Entry Grid.Row="0" Grid.Column="5" HorizontalTextAlignment="Center" Style="{StaticResource Entry}" Text="1"/>
-            <Entry Grid.Row="1" Grid.Column="5" HorizontalTextAlignment="Center" Style="{StaticResource Entry}" Text="{Binding Field17}"/>
-            <Entry Grid.Row="2" Grid.Column="5" HorizontalTextAlignment="Center" Style="{StaticResource Entry}" Text="5"/>
+        <!-- Top Middle Square -->
+        <Grid Grid.Row="0" Grid.Column="1">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="1*"/>
+            </Grid.RowDefinitions>
 
-            <Entry Grid.Row="0" Grid.Column="6" HorizontalTextAlignment="Center" Style="{StaticResource Entry}" Text="{Binding Field19}"/>
-            <Entry Grid.Row="1" Grid.Column="6" HorizontalTextAlignment="Center" Style="{StaticResource Entry}" Text="5"/>
-            <Entry Grid.Row="2" Grid.Column="6" HorizontalTextAlignment="Center" Style="{StaticResource Entry}" Text="2"/>
-            <Entry Grid.Row="0" Grid.Column="7" HorizontalTextAlignment="Center" Style="{StaticResource Entry}" Text="7"/>
-            <Entry Grid.Row="1" Grid.Column="7" HorizontalTextAlignment="Center" Style="{StaticResource Entry}" Text="1"/>
-            <Entry Grid.Row="2" Grid.Column="7" HorizontalTextAlignment="Center" Style="{StaticResource Entry}" Text="{Binding Field24}"/>
-            <Entry Grid.Row="0" Grid.Column="8" HorizontalTextAlignment="Center" Style="{StaticResource Entry}" Text="{Binding Field25}"/>
-            <Entry Grid.Row="1" Grid.Column="8" HorizontalTextAlignment="Center" Style="{StaticResource Entry}" Text="3"/>
-            <Entry Grid.Row="2" Grid.Column="8" HorizontalTextAlignment="Center" Style="{StaticResource Entry}" Text="6"/>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="1*"/>
+            </Grid.ColumnDefinitions>
 
-            <!-- Second Row -->
-            <Entry Grid.Row="3" Grid.Column="0" HorizontalTextAlignment="Center" Style="{StaticResource Entry}" Text="{Binding Field28}"/>
-            <Entry Grid.Row="4" Grid.Column="0" HorizontalTextAlignment="Center" Style="{StaticResource Entry}" Text="6"/>
-            <Entry Grid.Row="5" Grid.Column="0" HorizontalTextAlignment="Center" Style="{StaticResource Entry}" Text="{Binding Field30}"/>
-            <Entry Grid.Row="3" Grid.Column="1" HorizontalTextAlignment="Center" Style="{StaticResource Entry}" Text="2"/>
-            <Entry Grid.Row="4" Grid.Column="1" HorizontalTextAlignment="Center" Style="{StaticResource Entry}" Text="{Binding Field32}"/>
-            <Entry Grid.Row="5" Grid.Column="1" HorizontalTextAlignment="Center" Style="{StaticResource Entry}" Text="3"/>
-            <Entry Grid.Row="3" Grid.Column="2" HorizontalTextAlignment="Center" Style="{StaticResource Entry}" Text="8"/>
-            <Entry Grid.Row="4" Grid.Column="2" HorizontalTextAlignment="Center" Style="{StaticResource Entry}" Text="4"/>
-            <Entry Grid.Row="5" Grid.Column="2" HorizontalTextAlignment="Center" Style="{StaticResource Entry}" Text="1"/>
+            <Entry Grid.Row="0" Grid.Column="0" HorizontalTextAlignment="Center" Style="{StaticResource Entry}" Text="{Binding Field10}"/>
+            <Entry Grid.Row="1" Grid.Column="0" HorizontalTextAlignment="Center" Style="{StaticResource Entry}" Text="8"/>
+            <Entry Grid.Row="2" Grid.Column="0" HorizontalTextAlignment="Center" Style="{StaticResource Entry}" Text="7"/>
+            <Entry Grid.Row="0" Grid.Column="1" HorizontalTextAlignment="Center" Style="{StaticResource Entry}" Text="3"/>
+            <Entry Grid.Row="1" Grid.Column="1" HorizontalTextAlignment="Center" Style="{StaticResource Entry}" Text="6"/>
+            <Entry Grid.Row="2" Grid.Column="1" HorizontalTextAlignment="Center" Style="{StaticResource Entry}" Text="{Binding Field15}"/>
+            <Entry Grid.Row="0" Grid.Column="2" HorizontalTextAlignment="Center" Style="{StaticResource Entry}" Text="1"/>
+            <Entry Grid.Row="1" Grid.Column="2" HorizontalTextAlignment="Center" Style="{StaticResource Entry}" Text="{Binding Field17}"/>
+            <Entry Grid.Row="2" Grid.Column="2" HorizontalTextAlignment="Center" Style="{StaticResource Entry}" Text="5"/>
+        </Grid>
 
-            <Entry Grid.Row="3" Grid.Column="3" HorizontalTextAlignment="Center" Style="{StaticResource Entry}" Text="{Binding Field37}"/>
-            <Entry Grid.Row="4" Grid.Column="3" HorizontalTextAlignment="Center" Style="{StaticResource Entry}" Text="9"/>
-            <Entry Grid.Row="5" Grid.Column="3" HorizontalTextAlignment="Center" Style="{StaticResource Entry}" Text="6"/>
-            <Entry Grid.Row="3" Grid.Column="4" HorizontalTextAlignment="Center" Style="{StaticResource Entry}" Text="{Binding Field40}"/>
-            <Entry Grid.Row="4" Grid.Column="4" HorizontalTextAlignment="Center" Style="{StaticResource Entry}" Text="1"/>
-            <Entry Grid.Row="5" Grid.Column="4" HorizontalTextAlignment="Center" Style="{StaticResource Entry}" Text="2"/>
-            <Entry Grid.Row="3" Grid.Column="5" HorizontalTextAlignment="Center" Style="{StaticResource Entry}" Text="4"/>
-            <Entry Grid.Row="4" Grid.Column="5" HorizontalTextAlignment="Center" Style="{StaticResource Entry}" Text="3"/>
-            <Entry Grid.Row="5" Grid.Column="5" HorizontalTextAlignment="Center" Style="{StaticResource Entry}" Text="{Binding Field45}"/>
+        <!-- Top Right Square -->
+        <Grid Grid.Row="0" Grid.Column="2">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="1*"/>
+            </Grid.RowDefinitions>
 
-            <Entry Grid.Row="3" Grid.Column="6" HorizontalTextAlignment="Center" Style="{StaticResource Entry}" Text="3"/>
-            <Entry Grid.Row="4" Grid.Column="6" HorizontalTextAlignment="Center" Style="{StaticResource Entry}" Text="7"/>
-            <Entry Grid.Row="5" Grid.Column="6" HorizontalTextAlignment="Center" Style="{StaticResource Entry}" Text="{Binding Field48}"/>
-            <Entry Grid.Row="3" Grid.Column="7" HorizontalTextAlignment="Center" Style="{StaticResource Entry}" Text="6"/>
-            <Entry Grid.Row="4" Grid.Column="7" HorizontalTextAlignment="Center" Style="{StaticResource Entry}" Text="2"/>
-            <Entry Grid.Row="5" Grid.Column="7" HorizontalTextAlignment="Center" Style="{StaticResource Entry}" Text="9"/>
-            <Entry Grid.Row="3" Grid.Column="8" HorizontalTextAlignment="Center" Style="{StaticResource Entry}" Text="1"/>
-            <Entry Grid.Row="4" Grid.Column="8" HorizontalTextAlignment="Center" Style="{StaticResource Entry}" Text="{Binding Field53}"/>
-            <Entry Grid.Row="5" Grid.Column="8" HorizontalTextAlignment="Center" Style="{StaticResource Entry}" Text="5"/>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="1*"/>
+            </Grid.ColumnDefinitions>
 
-            <!-- Third Row -->
-            <Entry Grid.Row="6" Grid.Column="0" HorizontalTextAlignment="Center" Style="{StaticResource Entry}" Text="4"/>
-            <Entry Grid.Row="7" Grid.Column="0" HorizontalTextAlignment="Center" Style="{StaticResource Entry}" Text="1"/>
-            <Entry Grid.Row="8" Grid.Column="0" HorizontalTextAlignment="Center" Style="{StaticResource Entry}" Text="{Binding Field57}"/>
-            <Entry Grid.Row="6" Grid.Column="1" HorizontalTextAlignment="Center" Style="{StaticResource Entry}" Text="{Binding Field58}"/>
-            <Entry Grid.Row="7" Grid.Column="1" HorizontalTextAlignment="Center" Style="{StaticResource Entry}" Text="7"/>
-            <Entry Grid.Row="8" Grid.Column="1" HorizontalTextAlignment="Center" Style="{StaticResource Entry}" Text="6"/>
-            <Entry Grid.Row="6" Grid.Column="2" HorizontalTextAlignment="Center" Style="{StaticResource Entry}" Text="5"/>
-            <Entry Grid.Row="7" Grid.Column="2" HorizontalTextAlignment="Center" Style="{StaticResource Entry}" Text="{Binding Field62}"/>
-            <Entry Grid.Row="8" Grid.Column="2" HorizontalTextAlignment="Center" Style="{StaticResource Entry}" Text="2"/>
+            <Entry Grid.Row="0" Grid.Column="0" HorizontalTextAlignment="Center" Style="{StaticResource Entry}" Text="{Binding Field19}"/>
+            <Entry Grid.Row="1" Grid.Column="0" HorizontalTextAlignment="Center" Style="{StaticResource Entry}" Text="5"/>
+            <Entry Grid.Row="2" Grid.Column="0" HorizontalTextAlignment="Center" Style="{StaticResource Entry}" Text="2"/>
+            <Entry Grid.Row="0" Grid.Column="1" HorizontalTextAlignment="Center" Style="{StaticResource Entry}" Text="7"/>
+            <Entry Grid.Row="1" Grid.Column="1" HorizontalTextAlignment="Center" Style="{StaticResource Entry}" Text="1"/>
+            <Entry Grid.Row="2" Grid.Column="1" HorizontalTextAlignment="Center" Style="{StaticResource Entry}" Text="{Binding Field24}"/>
+            <Entry Grid.Row="0" Grid.Column="2" HorizontalTextAlignment="Center" Style="{StaticResource Entry}" Text="{Binding Field25}"/>
+            <Entry Grid.Row="1" Grid.Column="2" HorizontalTextAlignment="Center" Style="{StaticResource Entry}" Text="3"/>
+            <Entry Grid.Row="2" Grid.Column="2" HorizontalTextAlignment="Center" Style="{StaticResource Entry}" Text="6"/>
+        </Grid>
 
-            <Entry Grid.Row="6" Grid.Column="3" HorizontalTextAlignment="Center" Style="{StaticResource Entry}" Text="{Binding Field64}"/>
-            <Entry Grid.Row="7" Grid.Column="3" HorizontalTextAlignment="Center" Style="{StaticResource Entry}" Text="4"/>
-            <Entry Grid.Row="8" Grid.Column="3" HorizontalTextAlignment="Center" Style="{StaticResource Entry}" Text="3"/>
-            <Entry Grid.Row="6" Grid.Column="4" HorizontalTextAlignment="Center" Style="{StaticResource Entry}" Text="8"/>
-            <Entry Grid.Row="7" Grid.Column="4" HorizontalTextAlignment="Center" Style="{StaticResource Entry}" Text="9"/>
-            <Entry Grid.Row="8" Grid.Column="4" HorizontalTextAlignment="Center" Style="{StaticResource Entry}" Text="5"/>
-            <Entry Grid.Row="6" Grid.Column="5" HorizontalTextAlignment="Center" Style="{StaticResource Entry}" Text="2"/>
-            <Entry Grid.Row="7" Grid.Column="5" HorizontalTextAlignment="Center" Style="{StaticResource Entry}" Text="6"/>
-            <Entry Grid.Row="8" Grid.Column="5" HorizontalTextAlignment="Center" Style="{StaticResource Entry}" Text="{Binding Field72}"/>
+        <!-- Middle Left Square -->
+        <Grid Grid.Row="1" Grid.Column="0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="1*"/>
+            </Grid.RowDefinitions>
 
-            <Entry Grid.Row="6" Grid.Column="6" HorizontalTextAlignment="Center" Style="{StaticResource Entry}" Text="{Binding Field73}"/>
-            <Entry Grid.Row="7" Grid.Column="6" HorizontalTextAlignment="Center" Style="{StaticResource Entry}" Text="8"/>
-            <Entry Grid.Row="8" Grid.Column="6" HorizontalTextAlignment="Center" Style="{StaticResource Entry}" Text="1"/>
-            <Entry Grid.Row="6" Grid.Column="7" HorizontalTextAlignment="Center" Style="{StaticResource Entry}" Text="3"/>
-            <Entry Grid.Row="7" Grid.Column="7" HorizontalTextAlignment="Center" Style="{StaticResource Entry}" Text="{Binding Field77}"/>
-            <Entry Grid.Row="8" Grid.Column="7" HorizontalTextAlignment="Center" Style="{StaticResource Entry}" Text="{Binding Field78}"/>
-            <Entry Grid.Row="6" Grid.Column="8" HorizontalTextAlignment="Center" Style="{StaticResource Entry}" Text="7"/>
-            <Entry Grid.Row="7" Grid.Column="8" HorizontalTextAlignment="Center" Style="{StaticResource Entry}" Text="2"/>
-            <Entry Grid.Row="8" Grid.Column="8" HorizontalTextAlignment="Center" Style="{StaticResource Entry}" Text="9"/>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="1*"/>
+            </Grid.ColumnDefinitions>
+
+            <Entry Grid.Row="0" Grid.Column="0" HorizontalTextAlignment="Center" Style="{StaticResource Entry}" Text="{Binding Field28}"/>
+            <Entry Grid.Row="1" Grid.Column="0" HorizontalTextAlignment="Center" Style="{StaticResource Entry}" Text="6"/>
+            <Entry Grid.Row="2" Grid.Column="0" HorizontalTextAlignment="Center" Style="{StaticResource Entry}" Text="{Binding Field30}"/>
+            <Entry Grid.Row="0" Grid.Column="1" HorizontalTextAlignment="Center" Style="{StaticResource Entry}" Text="2"/>
+            <Entry Grid.Row="1" Grid.Column="1" HorizontalTextAlignment="Center" Style="{StaticResource Entry}" Text="{Binding Field32}"/>
+            <Entry Grid.Row="2" Grid.Column="1" HorizontalTextAlignment="Center" Style="{StaticResource Entry}" Text="3"/>
+            <Entry Grid.Row="0" Grid.Column="2" HorizontalTextAlignment="Center" Style="{StaticResource Entry}" Text="8"/>
+            <Entry Grid.Row="1" Grid.Column="2" HorizontalTextAlignment="Center" Style="{StaticResource Entry}" Text="4"/>
+            <Entry Grid.Row="2" Grid.Column="2" HorizontalTextAlignment="Center" Style="{StaticResource Entry}" Text="1"/>
+        </Grid>
+
+        <!-- Middle Middle Square -->
+        <Grid Grid.Row="1" Grid.Column="1">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="1*"/>
+            </Grid.RowDefinitions>
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="1*"/>
+            </Grid.ColumnDefinitions>
+
+            <Entry Grid.Row="0" Grid.Column="0" HorizontalTextAlignment="Center" Style="{StaticResource Entry}" Text="{Binding Field37}"/>
+            <Entry Grid.Row="1" Grid.Column="0" HorizontalTextAlignment="Center" Style="{StaticResource Entry}" Text="9"/>
+            <Entry Grid.Row="2" Grid.Column="0" HorizontalTextAlignment="Center" Style="{StaticResource Entry}" Text="6"/>
+            <Entry Grid.Row="0" Grid.Column="1" HorizontalTextAlignment="Center" Style="{StaticResource Entry}" Text="{Binding Field40}"/>
+            <Entry Grid.Row="1" Grid.Column="1" HorizontalTextAlignment="Center" Style="{StaticResource Entry}" Text="1"/>
+            <Entry Grid.Row="2" Grid.Column="1" HorizontalTextAlignment="Center" Style="{StaticResource Entry}" Text="2"/>
+            <Entry Grid.Row="0" Grid.Column="2" HorizontalTextAlignment="Center" Style="{StaticResource Entry}" Text="4"/>
+            <Entry Grid.Row="1" Grid.Column="2" HorizontalTextAlignment="Center" Style="{StaticResource Entry}" Text="3"/>
+            <Entry Grid.Row="2" Grid.Column="2" HorizontalTextAlignment="Center" Style="{StaticResource Entry}" Text="{Binding Field45}"/>
+        </Grid>
+        
+        <!-- Middle Right Square -->
+        <Grid Grid.Row="1" Grid.Column="2">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="1*"/>
+            </Grid.RowDefinitions>
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="1*"/>
+            </Grid.ColumnDefinitions>
+
+            <Entry Grid.Row="0" Grid.Column="0" HorizontalTextAlignment="Center" Style="{StaticResource Entry}" Text="3"/>
+            <Entry Grid.Row="1" Grid.Column="0" HorizontalTextAlignment="Center" Style="{StaticResource Entry}" Text="7"/>
+            <Entry Grid.Row="2" Grid.Column="0" HorizontalTextAlignment="Center" Style="{StaticResource Entry}" Text="{Binding Field48}"/>
+            <Entry Grid.Row="0" Grid.Column="1" HorizontalTextAlignment="Center" Style="{StaticResource Entry}" Text="6"/>
+            <Entry Grid.Row="1" Grid.Column="1" HorizontalTextAlignment="Center" Style="{StaticResource Entry}" Text="2"/>
+            <Entry Grid.Row="2" Grid.Column="1" HorizontalTextAlignment="Center" Style="{StaticResource Entry}" Text="9"/>
+            <Entry Grid.Row="0" Grid.Column="2" HorizontalTextAlignment="Center" Style="{StaticResource Entry}" Text="1"/>
+            <Entry Grid.Row="1" Grid.Column="2" HorizontalTextAlignment="Center" Style="{StaticResource Entry}" Text="{Binding Field53}"/>
+            <Entry Grid.Row="2" Grid.Column="2" HorizontalTextAlignment="Center" Style="{StaticResource Entry}" Text="5"/>
+        </Grid>
+
+        <!-- Bottom Left Square -->
+        <Grid Grid.Row="2" Grid.Column="0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="1*"/>
+            </Grid.RowDefinitions>
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="1*"/>
+            </Grid.ColumnDefinitions>
+
+            <Entry Grid.Row="0" Grid.Column="0" HorizontalTextAlignment="Center" Style="{StaticResource Entry}" Text="4"/>
+            <Entry Grid.Row="1" Grid.Column="0" HorizontalTextAlignment="Center" Style="{StaticResource Entry}" Text="1"/>
+            <Entry Grid.Row="2" Grid.Column="0" HorizontalTextAlignment="Center" Style="{StaticResource Entry}" Text="{Binding Field57}"/>
+            <Entry Grid.Row="0" Grid.Column="1" HorizontalTextAlignment="Center" Style="{StaticResource Entry}" Text="{Binding Field58}"/>
+            <Entry Grid.Row="1" Grid.Column="1" HorizontalTextAlignment="Center" Style="{StaticResource Entry}" Text="7"/>
+            <Entry Grid.Row="2" Grid.Column="1" HorizontalTextAlignment="Center" Style="{StaticResource Entry}" Text="6"/>
+            <Entry Grid.Row="0" Grid.Column="2" HorizontalTextAlignment="Center" Style="{StaticResource Entry}" Text="5"/>
+            <Entry Grid.Row="1" Grid.Column="2" HorizontalTextAlignment="Center" Style="{StaticResource Entry}" Text="{Binding Field62}"/>
+            <Entry Grid.Row="2" Grid.Column="2" HorizontalTextAlignment="Center" Style="{StaticResource Entry}" Text="2"/>
+        </Grid>
+
+        <!-- Bottom Middle Square -->
+        <Grid Grid.Row="2" Grid.Column="1">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="1*"/>
+            </Grid.RowDefinitions>
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="1*"/>
+            </Grid.ColumnDefinitions>
+
+            <Entry Grid.Row="0" Grid.Column="0" HorizontalTextAlignment="Center" Style="{StaticResource Entry}" Text="{Binding Field64}"/>
+            <Entry Grid.Row="1" Grid.Column="0" HorizontalTextAlignment="Center" Style="{StaticResource Entry}" Text="4"/>
+            <Entry Grid.Row="2" Grid.Column="0" HorizontalTextAlignment="Center" Style="{StaticResource Entry}" Text="3"/>
+            <Entry Grid.Row="0" Grid.Column="1" HorizontalTextAlignment="Center" Style="{StaticResource Entry}" Text="8"/>
+            <Entry Grid.Row="1" Grid.Column="1" HorizontalTextAlignment="Center" Style="{StaticResource Entry}" Text="9"/>
+            <Entry Grid.Row="2" Grid.Column="1" HorizontalTextAlignment="Center" Style="{StaticResource Entry}" Text="5"/>
+            <Entry Grid.Row="0" Grid.Column="2" HorizontalTextAlignment="Center" Style="{StaticResource Entry}" Text="2"/>
+            <Entry Grid.Row="1" Grid.Column="2" HorizontalTextAlignment="Center" Style="{StaticResource Entry}" Text="6"/>
+            <Entry Grid.Row="2" Grid.Column="2" HorizontalTextAlignment="Center" Style="{StaticResource Entry}" Text="{Binding Field72}"/>
+        </Grid>
+
+        <!-- Bottom Right Square -->
+        <Grid Grid.Row="2" Grid.Column="2">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="1*"/>
+            </Grid.RowDefinitions>
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="1*"/>
+            </Grid.ColumnDefinitions>
+
+            <Entry Grid.Row="0" Grid.Column="0" HorizontalTextAlignment="Center" Style="{StaticResource Entry}" Text="{Binding Field73}"/>
+            <Entry Grid.Row="1" Grid.Column="0" HorizontalTextAlignment="Center" Style="{StaticResource Entry}" Text="8"/>
+            <Entry Grid.Row="2" Grid.Column="0" HorizontalTextAlignment="Center" Style="{StaticResource Entry}" Text="1"/>
+            <Entry Grid.Row="0" Grid.Column="1" HorizontalTextAlignment="Center" Style="{StaticResource Entry}" Text="3"/>
+            <Entry Grid.Row="1" Grid.Column="1" HorizontalTextAlignment="Center" Style="{StaticResource Entry}" Text="{Binding Field77}"/>
+            <Entry Grid.Row="2" Grid.Column="1" HorizontalTextAlignment="Center" Style="{StaticResource Entry}" Text="{Binding Field78}"/>
+            <Entry Grid.Row="0" Grid.Column="2" HorizontalTextAlignment="Center" Style="{StaticResource Entry}" Text="7"/>
+            <Entry Grid.Row="1" Grid.Column="2" HorizontalTextAlignment="Center" Style="{StaticResource Entry}" Text="2"/>
+            <Entry Grid.Row="2" Grid.Column="2" HorizontalTextAlignment="Center" Style="{StaticResource Entry}" Text="9"/>
         </Grid>
     </Grid>
 </ContentPage>
