@@ -9,19 +9,77 @@ namespace Dw_Sudoku_Exam
     {
         private readonly ISudoku sudoku;
 
-        private string result = string.Empty;
-        public string Result
+        private string _field3 = string.Empty;
+        private string _field5 = string.Empty;
+        private string _field9 = string.Empty;
+
+        public string Field3
         {
             get
             {
-                return result;
+                return _field3;
             }
-            private set
+            set
             {
-                if (result != value)
+                if (_field3 != value)
                 {
-                    result = value;
-                    Notify(nameof(Result));
+                    if (validateInput(value))
+                    {
+                        _field3 = value;
+                    }
+                    else {
+                        _field3 = "";
+                    }
+                    Notify(nameof(Field3));
+
+                }
+            }
+        }
+
+        public string field5
+        {
+            get
+            {
+                return _field5;
+            }
+            set
+            {
+                if (_field5 != value)
+                {
+                    if (validateInput(value))
+                    {
+                        _field5 = value;
+                    }
+                    else
+                    {
+                        _field5 = "";
+                    }
+                    Notify(nameof(field5));
+
+                }
+            }
+        }
+
+        public string Field9
+        {
+            get
+            {
+                return _field9;
+            }
+            set
+            {
+                if (_field9 != value)
+                {
+                    if (validateInput(value))
+                    {
+                        _field9 = value;
+                    }
+                    else
+                    {
+                        _field9 = "";
+                    }
+                    Notify(nameof(Field9));
+
                 }
             }
         }
@@ -31,24 +89,31 @@ namespace Dw_Sudoku_Exam
             this.sudoku = Sudoku;
         }
 
+
         private void SudokuCommand(string args)
         {
 
         }
 
-        private void UpdateResult(string value)
-        {
-            Result += value;
+        public bool validateInput(string value) {
+
+            int val;
+
+            try
+            {
+                val = Int32.Parse(value);
+            }
+            catch (Exception e) {
+                return false;
+            }
+
+
+            if (val < 1 || val > 9) {
+                return false;
+            }
+
+            return true;
         }
 
-        private void SetResult(string value)
-        {
-            Result = value;
-        }
-
-        private void ResetResult()
-        {
-            Result = string.Empty;
-        }
     }
 }

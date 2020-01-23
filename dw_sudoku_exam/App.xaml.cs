@@ -1,8 +1,7 @@
 ﻿using System;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
-using Dw_Sudoku_Exam.Services;
-using Dw_Sudoku_Exam.Views;
+using dw_sudoku_exam;
 
 namespace Dw_Sudoku_Exam
 {
@@ -13,8 +12,10 @@ namespace Dw_Sudoku_Exam
         {
             InitializeComponent();
 
-            DependencyService.Register<MockDataStore>();
-            MainPage = new Views.MainPage();
+
+            ISudoku sudoku = null;
+
+            MainPage = new MainPage(new MainPageViewModel(sudoku));
         }
 
         protected override void OnStart()
